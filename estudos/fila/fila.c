@@ -27,8 +27,3 @@ int desenfileira(fila *f, int *y){
     free(lixo);
     return 0;
 }
-
-int main(void){
-
-    return 0;
-}
