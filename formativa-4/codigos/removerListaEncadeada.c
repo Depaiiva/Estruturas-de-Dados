@@ -166,8 +166,3 @@ void mescla_listas(celula *l1, celula *l2, celula *l3){
     }
     
 }
-
-int main(void){
-
-    return 0;
-}
