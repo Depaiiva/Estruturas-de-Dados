@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/exp-mat1.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Expressões matemáticas 1</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+</style>
+  <style type="text/css">body {
+margin: auto;
+padding-right: 1em;
+padding-left: 1em;
+max-width: 44em; border-left: 1px solid black;
+border-right: 1px solid black;
+color: black;
+font-family: Verdana, sans-serif;
+font-size: 100%;
+line-height: 140%;
+color: #333; }
+pre {
+border: 1px dotted gray;
+background-color: #ececec;
+color: #1111111;
+padding: 0.5em;
+}
+blockquote {
+color: #666666;
+margin: 0;
+padding-left: 3em;
+border-left: 0.5em #EEE solid;
+}
+code {
+font-family: monospace;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a { text-decoration: none;
+color: #7a5ada; }
+h1, h2, h3, h4, h5 { font-family: verdana;
+font-weight: bold;
+border-bottom: 1px dotted black;
+color: #7a5ada; }
+h1 {
+font-size: 130%;
+}
+h2 {
+font-size: 110%;
+}
+h3 {
+font-size: 95%;
+}
+h4 {
+font-size: 90%;
+font-style: italic;
+}
+h5 {
+font-size: 90%;
+font-style: italic;
+}
+h1.title {
+font-size: 200%;
+font-weight: bold;
+padding-top: 0.2em;
+padding-bottom: 0.2em;
+text-align: left;
+border: none;
+}
+dt code {
+font-weight: bold;
+}
+dd p {
+margin-top: 0;
+}
+#footer {
+padding-top: 1em;
+font-size: 70%;
+color: gray;
+text-align: center;
+}
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Expressões matemáticas 1</h1>
+</header>
+<p>Usualmente, estamos acostumados a ver expressões matemáticas. Uma
+expressão matemática é um arranjo de termos que seguem o seguinte
+padrão</p>
+<p><code>operando operador operando</code></p>
+<p>sendo o operador algum dos operadores matemáticos, por exemplo,
+<code>+</code>, <code>-</code>, <code>*</code> e <code>/</code>, e o
+operando um número ou outro termo do mesmo formato. Por exemplo,</p>
+<pre><code>A+B</code></pre>
+<p>e</p>
+<pre><code>(A+B)*C</code></pre>
+<p>são exemplos de expressões matemáticas.</p>
+<p>Sabemos que nas expressões matemáticas, os operadores possuem uma
+ordem de prioridade. Não obstante, há formas de se alterar essa ordem de
+prioridade, usando-se chaves, colchetes e parênteses. Deste modo, as
+expressões que estiverem dentro desses modificadores serão avaliadas
+primeiro.</p>
+<p>A regra de ouro é a seguinte: sempre que abrimos um parêntese,
+devemos fechá-lo depois. O mesmo vale para chaves e colchetes.</p>
+<h2 id="tarefa">Tarefa</h2>
+<p>Sua tarefa é, dada uma expressão matemática, verificar se a expressão
+está corretamente <em>parentizada</em>, ou seja, se toda <em>chave</em>,
+<em>colchete</em> e <em>parêntese</em> abertos são fechados
+posteriormente.</p>
+<h2 id="entrada">Entrada</h2>
+<p>A entrada é composta por uma única linha, contendo uma expressão
+matemática com, no máximo, 500 caracteres.</p>
+<h2 id="saída">Saída</h2>
+<p>A saída é composta por uma única linha contendo “sim” se a expressão
+estiver corretamente parentizada, ou “nao” caso contrário.</p>
+<h3 id="exemplo-de-entrada-1">Exemplo de Entrada 1</h3>
+<pre><code>A+B</code></pre>
+<h3 id="exemplo-de-saída-1">Exemplo de Saída 1</h3>
+<pre><code>sim</code></pre>
+<h3 id="exemplo-de-entrada-2">Exemplo de Entrada 2</h3>
+<pre><code>{X-Y+[Z*(A^2-C)/(A+B)}</code></pre>
+<h3 id="exemplo-de-saída-2">Exemplo de Saída 2</h3>
+<pre><code>nao</code></pre>
+<h3 id="exemplo-de-entrada-3">Exemplo de Entrada 3</h3>
+<pre><code>(A+B)/C</code></pre>
+<h3 id="exemplo-de-saída-3">Exemplo de Saída 3</h3>
+<pre><code>sim</code></pre>
+<h3 id="exemplo-de-entrada-4">Exemplo de Entrada 4</h3>
+<pre><code>{(Z-A]/(K+10)}+C</code></pre>
+<h3 id="exemplo-de-saída-4">Exemplo de Saída 4</h3>
+<pre><code>nao</code></pre>
+<div id="footer">
+<p>Author: John L. Gardenghi</p>
+</div>
+
+
+</body></html>

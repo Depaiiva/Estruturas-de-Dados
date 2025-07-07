@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- saved from url=(0082)https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/pilha-desempilha-lista.html -->
+<!-- saved from url=(0080)https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/fila-enfileira-lista.html -->
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Pilhas - remoção de elementos</title>
+  <title>Filas - inserção de elementos</title>
   <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -156,28 +156,26 @@ text-align: center;
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Pilhas - remoção de elementos</h1>
+<h1 class="title">Filas - inserção de elementos</h1>
 </header>
-<p>Numa pilha, a remoção de elementos é chamada
-<strong>desempilhamento</strong>. Sua tarefa nesse exercício é
+<p>Numa fila, a inserção de elementos é chamada
+<strong>enfileiramento</strong>. Sua tarefa nesse exercício é
 implementar essa operação usando <em>listas encadeadas</em>. Para tanto,
 você deve submeter a função</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb1-1"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/pilha-desempilha-lista.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> desempilha <span class="op">(</span>celula <span class="op">*</span>p<span class="op">,</span> <span class="dt">int</span> <span class="op">*</span>y<span class="op">);</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb1-1"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/fila-enfileira-lista.html#cb1-1" aria-hidden="true" tabindex="-1"></a>celula <span class="op">*</span>enfileira <span class="op">(</span>celula <span class="op">*</span>f<span class="op">,</span> <span class="dt">int</span> x<span class="op">);</span></span></code></pre></div>
 <p>que deve</p>
 <ul>
-<li><p>remover um elemento da pilha <code>p</code> e salvá-lo em
-<code>y</code> e</p></li>
-<li><p>retornar 1 se a remoção foi bem sucedida, e 0 caso
-contrário.</p></li>
+<li><p>inserir o elemento <code>x</code> na fila encabeçada por
+<code>f</code> e</p></li>
+<li><p>retornar o ponteiro para o novo nó cabeça, se a inserção foi bem
+sucedida, ou <code>NULL</code>, caso contrário.</p></li>
 </ul>
 <p>Espera-se que <code>celula</code> seja uma <code>struct</code> da
 forma</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb2-1"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/pilha-desempilha-lista.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">typedef</span> <span class="kw">struct</span> celula <span class="op">{</span></span>
-<span id="cb2-2"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/pilha-desempilha-lista.html#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> dado<span class="op">;</span></span>
-<span id="cb2-3"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/pilha-desempilha-lista.html#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">struct</span> celula <span class="op">*</span>prox<span class="op">;</span></span>
-<span id="cb2-4"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/pilha-desempilha-lista.html#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="op">}</span> celula<span class="op">;</span></span></code></pre></div>
-<p>e que a pilha seja representada por uma lista encadeada com nó
-cabeça.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb2-1"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/fila-enfileira-lista.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">typedef</span> <span class="kw">struct</span> celula <span class="op">{</span></span>
+<span id="cb2-2"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/fila-enfileira-lista.html#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> dado<span class="op">;</span></span>
+<span id="cb2-3"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/fila-enfileira-lista.html#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">struct</span> celula <span class="op">*</span>prox<span class="op">;</span></span>
+<span id="cb2-4"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/fila-enfileira-lista.html#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="op">}</span> celula<span class="op">;</span></span></code></pre></div>
 <p>O arquivo a ser submetido deve incluir apenas</p>
 <ol type="1">
 <li><p>os <code>#include</code> necessários para a execução do seu

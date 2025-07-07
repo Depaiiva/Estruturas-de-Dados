@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0082)https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/pilha-desempilha-lista.html -->
+<!-- saved from url=(0082)https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/pilha-desempilha-vetor.html -->
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
   <meta name="generator" content="pandoc">
@@ -160,9 +160,9 @@ text-align: center;
 </header>
 <p>Numa pilha, a remoção de elementos é chamada
 <strong>desempilhamento</strong>. Sua tarefa nesse exercício é
-implementar essa operação usando <em>listas encadeadas</em>. Para tanto,
-você deve submeter a função</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb1-1"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/pilha-desempilha-lista.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> desempilha <span class="op">(</span>celula <span class="op">*</span>p<span class="op">,</span> <span class="dt">int</span> <span class="op">*</span>y<span class="op">);</span></span></code></pre></div>
+implementar essa operação usando <em>vetores</em>. Para tanto, você deve
+submeter a função</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb1-1"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/pilha-desempilha-vetor.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> desempilha <span class="op">(</span>pilha <span class="op">*</span>p<span class="op">,</span> <span class="dt">int</span> <span class="op">*</span>y<span class="op">);</span></span></code></pre></div>
 <p>que deve</p>
 <ul>
 <li><p>remover um elemento da pilha <code>p</code> e salvá-lo em
@@ -170,14 +170,15 @@ você deve submeter a função</p>
 <li><p>retornar 1 se a remoção foi bem sucedida, e 0 caso
 contrário.</p></li>
 </ul>
-<p>Espera-se que <code>celula</code> seja uma <code>struct</code> da
+<p>Espera-se que <code>pilha</code> seja uma <code>struct</code> da
 forma</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb2-1"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/pilha-desempilha-lista.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">typedef</span> <span class="kw">struct</span> celula <span class="op">{</span></span>
-<span id="cb2-2"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/pilha-desempilha-lista.html#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> dado<span class="op">;</span></span>
-<span id="cb2-3"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/pilha-desempilha-lista.html#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">struct</span> celula <span class="op">*</span>prox<span class="op">;</span></span>
-<span id="cb2-4"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/pilha-desempilha-lista.html#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="op">}</span> celula<span class="op">;</span></span></code></pre></div>
-<p>e que a pilha seja representada por uma lista encadeada com nó
-cabeça.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb2-1"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/pilha-desempilha-vetor.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">typedef</span> <span class="kw">struct</span> pilha <span class="op">{</span></span>
+<span id="cb2-2"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/pilha-desempilha-vetor.html#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> <span class="op">*</span>dados<span class="op">;</span></span>
+<span id="cb2-3"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/pilha-desempilha-vetor.html#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> N<span class="op">,</span> topo<span class="op">;</span></span>
+<span id="cb2-4"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f4_2025_1/pilha-desempilha-vetor.html#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="op">}</span> pilha<span class="op">;</span></span></code></pre></div>
+<p>de tal forma que <code>topo</code> indica a <strong>primeira posição
+livre</strong> da pilha (ou seja, na inicialização vale <code>0</code> e
+quanto a pilha estiver cheia, vale <code>N</code>).</p>
 <p>O arquivo a ser submetido deve incluir apenas</p>
 <ol type="1">
 <li><p>os <code>#include</code> necessários para a execução do seu
