@@ -17,6 +17,7 @@ int empilha(celula *cabeca, int dado){
     if(cabeca == NULL) return 1;
 
     celula *novaCelula = malloc(sizeof(celula));
+    if(novaCelula == NULL) return 1;
     novaCelula->dado = dado;
     novaCelula->prox = cabeca->prox;
     cabeca->prox = novaCelula;
@@ -31,4 +32,12 @@ int desempilha(celula *cabeca, int *y){
     cabeca->prox = temp->prox;
     free(temp);
     return 0;
+}
+
+void destroiPilha(celula *cabeca){
+    while(cabeca->prox != NULL){
+        int y;
+        desempilha(cabeca, &y);
+    }
+    free(cabeca);
 }
