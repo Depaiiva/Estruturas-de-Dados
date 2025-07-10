@@ -21,12 +21,30 @@ celula *empilhamento(celula *cabeca, int dado){
     return novaCabeca;
 }
 
-void imprime(celula *le){
-    if(le == NULL){
+celula *desempilha(celula *cabeca, int *y){
+    if(cabeca == NULL) return NULL;
+
+    celula *temp = cabeca->prox;
+    *y = cabeca->prox->dado; // *y = temp->dado
+    free(cabeca);
+    return temp;
+}
+
+void destroiPilha(celula *cabeca){
+    if(cabeca != NULL){
+        destroiPilha(cabeca->prox);
+    }
+    free(cabeca);
+}
+
+
+
+void imprime(celula *cabeca){
+    if(cabeca == NULL){
         printf("NULL\n");
         return;
     }
-    celula *temp = le->prox;
+    celula *temp = cabeca->prox;
     while(temp != NULL){
         printf("%d -> ", temp->dado);
         temp = temp->prox;
@@ -41,6 +59,18 @@ int main(void){
     p = empilhamento(p, 30);
     p = empilhamento(p, 40);
     p = empilhamento(p, 50);
+    int y;
+    imprime(p);
+    printf("\n");
+    p = desempilha(p, &y);
+    imprime(p);
+    printf("%d\n", y);
+    printf("\n");
+    int x;
+    p = desempilha(p, &x);
+    imprime(p);
+    printf("%d\n", x);
+    destroiPilha(p);
     imprime(p);
     return 0;
 }
