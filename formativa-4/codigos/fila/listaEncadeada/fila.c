@@ -21,3 +21,43 @@ fila *enfileira(fila *cabeca, int x){
     cabeca->dado = x;
     return novaCabeca;
 }
+
+int desenfileira(fila *cabeca, int *y){
+    if(cabeca->prox == cabeca) return 1;
+    fila *temp = cabeca->prox;
+    *y = temp->dado;
+    cabeca->prox = temp->prox;
+    free(temp);
+    return 0;
+}
+
+void destroiFila(fila *cabeca){
+    if(cabeca->prox == cabeca) return;
+    fila *temp = cabeca->prox;
+    int a;
+    while(temp != cabeca){
+        desenfileira(temp, &a);
+    }
+    free(cabeca);
+}
+
+void imprime(fila *f){
+    fila *temp = f->prox;
+    if(temp == f){
+        return;
+    }
+    while(temp != f){
+        printf("%d -> ", temp->dado);
+        temp = temp->prox;
+    }
+    printf("%d\n", f->prox->dado);
+}
+
+int main(void){
+    fila *f = criaFila();
+    for(int i = 0; i < 20; i++){
+        f = enfileira(f, i * 10);
+    }
+    imprime(f);
+    return 0;
+}
