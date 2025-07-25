@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://moj.naquadah.com.br/contests/jl_eda1_f1_2025_1/radares.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Radares</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
+div.sourceCode
+{ background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } 
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } 
+code span.at { color: #204a87; } 
+code span.bn { color: #0000cf; } 
+code span.cf { color: #204a87; font-weight: bold; } 
+code span.ch { color: #4e9a06; } 
+code span.cn { color: #8f5902; } 
+code span.co { color: #8f5902; font-style: italic; } 
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } 
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } 
+code span.dt { color: #204a87; } 
+code span.dv { color: #0000cf; } 
+code span.er { color: #a40000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #0000cf; } 
+code span.fu { color: #204a87; font-weight: bold; } 
+code span.im { } 
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } 
+code span.kw { color: #204a87; font-weight: bold; } 
+code span.op { color: #ce5c00; font-weight: bold; } 
+code span.ot { color: #8f5902; } 
+code span.pp { color: #8f5902; font-style: italic; } 
+code span.sc { color: #ce5c00; font-weight: bold; } 
+code span.ss { color: #4e9a06; } 
+code span.st { color: #4e9a06; } 
+code span.va { color: #000000; } 
+code span.vs { color: #4e9a06; } 
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } 
+</style>
+  <style type="text/css">body {
+margin: auto;
+padding-right: 1em;
+padding-left: 1em;
+max-width: 44em; border-left: 1px solid black;
+border-right: 1px solid black;
+color: black;
+font-family: Verdana, sans-serif;
+font-size: 100%;
+line-height: 140%;
+color: #333; }
+pre {
+border: 1px dotted gray;
+background-color: #ececec;
+color: #1111111;
+padding: 0.5em;
+}
+blockquote {
+color: #666666;
+margin: 0;
+padding-left: 3em;
+border-left: 0.5em #EEE solid;
+}
+code {
+font-family: monospace;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a { text-decoration: none;
+color: #7a5ada; }
+h1, h2, h3, h4, h5 { font-family: verdana;
+font-weight: bold;
+border-bottom: 1px dotted black;
+color: #7a5ada; }
+h1 {
+font-size: 130%;
+}
+h2 {
+font-size: 110%;
+}
+h3 {
+font-size: 95%;
+}
+h4 {
+font-size: 90%;
+font-style: italic;
+}
+h5 {
+font-size: 90%;
+font-style: italic;
+}
+h1.title {
+font-size: 200%;
+font-weight: bold;
+padding-top: 0.2em;
+padding-bottom: 0.2em;
+text-align: left;
+border: none;
+}
+dt code {
+font-weight: bold;
+}
+dd p {
+margin-top: 0;
+}
+#footer {
+padding-top: 1em;
+font-size: 70%;
+color: gray;
+text-align: center;
+}
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Radares</h1>
+</header>
+<p>Ultimamente, as coisas andam muito difíceis no trânsito. Há radares
+de velocidade para todos os lados!</p>
+<p>Mas o pessoal do trânsito percebeu o seguinte: a galera anda correndo
+o tempo todo, e quando encontra um radar, pronto! Diminui a velocidade
+(às vezes ao extremo) para não levar uma multa.</p>
+<p>Diante disso, agora o esquema de multas é diferente: quando o
+motorista passa em um radar, não se mede mais a velocidade que o carro
+passa no radar, mas sim o horário atual que o carro está passando no
+radar, o horário que o motorista passou no radar anterior e a distância
+entre os radares. Desta forma, calcula-se a velocidade média do
+motorista: se a velocidade média for maior que a permitida, multa
+nele!</p>
+<p>Os radares possuem uma inédita tecnologia chinesa, e o horário que o
+motorista passa é dado pelo radar em segundos. Por exemplo, se o
+motorista passar no radar às <code>17:20:32</code>, então o radar dá o
+horário em segundos como <code>62432</code>.</p>
+<p>Como disse, o pessoal do trânsito teve essa ideia, mas eles entendem
+só de trânsito mesmo… Então, você foi convocado para desenvolver uma
+solução para esse nobre problema. Em troca, você fica sem multas de
+velocidade por um ano, e ainda ganha dois pontos e meio na prova de
+APC!</p>
+<p>Agora que você está entendendo melhor de programação, você quer
+modularizar sua solução. A ideia é a seguinte:</p>
+<ol type="1">
+<li>Você deve primeiro escrever uma função</li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode C"><code class="sourceCode c"><span id="cb1-1"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f1_2025_1/radares.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">double</span> calculaVelocidadeMedia<span class="op">(</span><span class="dt">int</span> tA<span class="op">,</span> <span class="dt">int</span> tB<span class="op">,</span> <span class="dt">double</span> distancia<span class="op">)</span></span></code></pre></div>
+<p>que receba três parâmetros</p>
+<ul>
+<li><p>dois horários <code>tA</code> e <code>tB</code>, em segundos, que
+definem quando o motorista passou num radar
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+e, depois, num radar
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>,
+e</p></li>
+<li><p>a distância entre o radar
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+e o radar
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>,
+em quilômetros.</p></li>
+</ul>
+<p>Sua função deve retornar a velocidade média em <code>km/h</code> que
+o motorista fez do radar
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+ao radar
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>.</p>
+<p>Ah, lembre-se que para converter de segundos para horas, basta
+dividir os segundos por 3600.</p>
+<h4 id="exemplo-1">Exemplo 1</h4>
+<div class="sourceCode" id="cb2"><pre class="sourceCode C"><code class="sourceCode c"><span id="cb2-1"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f1_2025_1/radares.html#cb2-1" aria-hidden="true" tabindex="-1"></a>calculaVelocidadeMedia<span class="op">(</span><span class="dv">61200</span><span class="op">,</span><span class="dv">63000</span><span class="op">,</span><span class="fl">60.0</span><span class="op">)</span></span></code></pre></div>
+<p>deve retornar</p>
+<pre><code>120.0</code></pre>
+<h4 id="exemplo-2">Exemplo 2</h4>
+<div class="sourceCode" id="cb4"><pre class="sourceCode C"><code class="sourceCode c"><span id="cb4-1"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f1_2025_1/radares.html#cb4-1" aria-hidden="true" tabindex="-1"></a>calculaVelocidadeMedia<span class="op">(</span><span class="dv">54169</span><span class="op">,</span><span class="dv">57346</span><span class="op">,</span><span class="fl">170.0</span><span class="op">)</span></span></code></pre></div>
+<p>deve retornar aproximadamente</p>
+<pre><code>192.634561</code></pre>
+<p>_</p>
+<ol start="2" type="1">
+<li>Depois, você deve escrever uma função</li>
+</ol>
+<div class="sourceCode" id="cb6"><pre class="sourceCode C"><code class="sourceCode c"><span id="cb6-1"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f1_2025_1/radares.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> levouMulta<span class="op">(</span><span class="dt">int</span> tA<span class="op">,</span> <span class="dt">int</span> tB<span class="op">,</span> <span class="dt">double</span> distancia<span class="op">,</span> <span class="dt">double</span> velocidadeMaxima<span class="op">)</span></span></code></pre></div>
+<p>que receba quatro parâmetros</p>
+<ul>
+<li><p>dois horários <code>tA</code> e <code>tB</code>, em segundos, que
+definem quando o motorista passou num radar
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+e, depois, num radar
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>,</p></li>
+<li><p>a distância entre o radar
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+e o radar
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>,
+em quilômetros e</p></li>
+<li><p>a velocidade máxima da pista.</p></li>
+</ul>
+<p>Sua função deve usar a função <code>calculaVelocidadeMedia</code> e
+retornar 1 se o motorista deve ser multado, e 0 caso contrário.</p>
+<h4 id="exemplo-1-1">Exemplo 1</h4>
+<div class="sourceCode" id="cb7"><pre class="sourceCode C"><code class="sourceCode c"><span id="cb7-1"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f1_2025_1/radares.html#cb7-1" aria-hidden="true" tabindex="-1"></a>levouMulta<span class="op">(</span><span class="dv">61200</span><span class="op">,</span><span class="dv">63000</span><span class="op">,</span><span class="fl">60.0</span><span class="op">,</span><span class="fl">120.0</span><span class="op">)</span></span></code></pre></div>
+<p>deve retornar</p>
+<pre><code>0</code></pre>
+<h4 id="exemplo-2-1">Exemplo 2</h4>
+<div class="sourceCode" id="cb9"><pre class="sourceCode C"><code class="sourceCode c"><span id="cb9-1"><a href="https://moj.naquadah.com.br/contests/jl_eda1_f1_2025_1/radares.html#cb9-1" aria-hidden="true" tabindex="-1"></a>levouMulta<span class="op">(</span><span class="dv">54169</span><span class="op">,</span><span class="dv">57346</span><span class="op">,</span><span class="fl">170.0</span><span class="op">,</span><span class="fl">120.0</span><span class="op">)</span></span></code></pre></div>
+<p>deve retornar</p>
+<pre><code>1</code></pre>
+<p><strong>Você deve submeter um arquivo contendo apenas as duas funções
+pedidas, mais os <code>#includes</code> necessários.</strong></p>
+<div id="footer">
+<p>Author: John L. Gardenghi</p>
+</div>
+
+
+</body></html>

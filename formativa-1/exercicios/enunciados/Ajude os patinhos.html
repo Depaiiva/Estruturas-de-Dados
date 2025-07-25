@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)https://moj.naquadah.com.br/contests/jl_eda1_f1_2025_1/ajude-os-patinhos.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Ajude os patinhos</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="./Ajude os patinhos_files/pandoc.css">
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Ajude os patinhos</h1>
+</header>
+<p>Mamãe patinho está andando com os seus filhotes e precisa passar para
+o outro lado da ilha para visitar o vovô, para isso os patinhos precisam
+passar por uma ponte, o problema é que a ponte pode estar quebrada,
+cheia de buracos! Mamãe patinho precisa saber quantos patos conseguirão
+completar o trajeto.</p>
+<p>Sua tarefa é dado um mapa, descobrir quantos patinhos conseguiram
+encontrar o vovô. A ilha em que os patinhos se encontram é representada
+por ‘<strong>S</strong>’, os patinhos devem chegar na ilha do vovô,
+representado por ‘<strong>E</strong>’. A água em volta é representada
+por ‘<strong>#</strong>’ (note que os patinhos ainda não sabem nadar).
+Seu programa deve de alguma forma simular o trajeto dos patinhos
+passando pela ponte ’<strong>_</strong>’ (caractere underline) e caso
+passem por buracos ‘<strong>o</strong>’ o que acontece é que um dos
+patinhos cai no buraco e fica preso, mas seu corpo preenche o buraco e
+os irmãos conseguem passar por cima dele, assim continuando o
+trajeto.</p>
+<h1 id="entrada">Entrada</h1>
+<p>A primeira linha contém um inteiro <strong>P</strong>, que é a
+quantidade de patos, as linhas abaixo contém o mapa da ilha. A entrada
+termina em <strong>EOF</strong>.</p>
+<h1 id="saída">Saída</h1>
+<p>A saída é composta apenas por uma linha com as seguintes
+possibilidades:</p>
+<ul>
+<li>Se nenhum pato conseguir chegar na outra ilha, imprima <strong>Todos
+morreram :)</strong>.</li>
+<li>Se todos os patos conseguirem chegar à outra ilha, imprima
+<strong>Nenhum morreu :(</strong>.</li>
+<li>Se apenas alguns conseguirem chegar à outra ilha, imprima <strong>X
+encontraram o vovo</strong>, sendo <strong>X</strong> a quantidade de
+patinhos que conseguiram completar o trajeto.</li>
+</ul>
+<h1 id="restrições">Restrições</h1>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>≤</mo><mi>P</mi><mo>≤</mo><msup><mn>10</mn><mn>4</mn></msup></mrow><annotation encoding="application/x-tex">1 \leqslant P \leqslant 10^4</annotation></semantics></math></p>
+<p>O mapa é uma matriz de tamanho <strong>M x N</strong>, onde
+<strong>M</strong> e <strong>N</strong> podem ser distintos, mas estarão
+no intervalo
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mo>≤</mo><mi>T</mi><mo>≤</mo><msup><mn>10</mn><mn>3</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">T(2 \leqslant T \leqslant 10^3)</annotation></semantics></math>.</p>
+<p>O mapa possui diversas pontes, mas elas não se intersectam, isto é,
+duas pontes distintas representadas por um conjunto de
+’<strong>_</strong>’ e ‘<strong>o</strong>’ nunca vão se tocar.</p>
+<p><em>Obs: é garantido que todas as linhas do mapa contém a mesma
+quantidade de caracteres</em></p>
+<h1 id="exemplos">Exemplos</h1>
+<h2 id="exemplo-1">Exemplo 1</h2>
+<p><strong>Entrada</strong></p>
+<pre><code>30
+#######
+#S_oo__
+######o
+#E_o___
+#######
+##____o</code></pre>
+<p><strong>Saída</strong></p>
+<pre><code>26 encontraram o vovo</code></pre>
+<h2 id="exemplo-2">Exemplo 2</h2>
+<p><strong>Entrada</strong></p>
+<pre><code>2
+##########
+##S____###
+o#####_###
+o#E###_###
+_#____o###
+o#########</code></pre>
+<p><strong>Saída</strong></p>
+<pre><code>1 encontraram o vovo</code></pre>
+<h2 id="exemplo-3">Exemplo 3</h2>
+<p><strong>Entrada</strong></p>
+<pre><code>2
+ooS
+_##
+E##</code></pre>
+<p><strong>Saída</strong></p>
+<pre><code>Todos morreram :)</code></pre>
+<h2 id="exemplo-4">Exemplo 4</h2>
+<p><strong>Entrada</strong></p>
+<pre><code>2
+##########
+##____S###
+##_#######
+##_#######
+##____E###
+o#########</code></pre>
+<p><strong>Saída</strong></p>
+<pre><code>Nenhum morreu :(</code></pre>
+<div id="footer">
+Author: David Ferreira e Yogi Barbosa
+</div>
+
+
+</body></html>

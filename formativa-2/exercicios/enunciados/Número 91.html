@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://moj.naquadah.com.br/contests/jl_eda1_f2_2025_1/f91.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Número 91</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+</style>
+  <style type="text/css">body {
+margin: auto;
+padding-right: 1em;
+padding-left: 1em;
+max-width: 44em; border-left: 1px solid black;
+border-right: 1px solid black;
+color: black;
+font-family: Verdana, sans-serif;
+font-size: 100%;
+line-height: 140%;
+color: #333; }
+pre {
+border: 1px dotted gray;
+background-color: #ececec;
+color: #1111111;
+padding: 0.5em;
+}
+blockquote {
+color: #666666;
+margin: 0;
+padding-left: 3em;
+border-left: 0.5em #EEE solid;
+}
+code {
+font-family: monospace;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a { text-decoration: none;
+color: #7a5ada; }
+h1, h2, h3, h4, h5 { font-family: verdana;
+font-weight: bold;
+border-bottom: 1px dotted black;
+color: #7a5ada; }
+h1 {
+font-size: 130%;
+}
+h2 {
+font-size: 110%;
+}
+h3 {
+font-size: 95%;
+}
+h4 {
+font-size: 90%;
+font-style: italic;
+}
+h5 {
+font-size: 90%;
+font-style: italic;
+}
+h1.title {
+font-size: 200%;
+font-weight: bold;
+padding-top: 0.2em;
+padding-bottom: 0.2em;
+text-align: left;
+border: none;
+}
+dt code {
+font-weight: bold;
+}
+dd p {
+margin-top: 0;
+}
+#footer {
+padding-top: 1em;
+font-size: 70%;
+color: gray;
+text-align: center;
+}
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Número 91</h1>
+</header>
+<p>João é um matemático e programador que adora subtrações numéricas.
+Certo dia, João encontrou um livro com o título “O Número 91”. Conforme
+lê-se no livro:</p>
+<blockquote>
+<p>“Aquele que abrir este livro, há de ser amaldiçoado,</p>
+<p>qualquer número menor ou igual a 100 será modificado.</p>
+<p>Aconselho-te portanto, não utilize mais a subtração,</p>
+<p>pois o número 91 será sua maldição.”</p>
+</blockquote>
+<p>João não deu atenção para o livro, já que não acredita em maldições e
+coisas do tipo. Passados alguns dias, João quis escrever um programa que
+sempre fizesse a subtração de qualquer número dado em 10.</p>
+<p>Você deve modificar o programa de João, adicionando a maldição a
+seguir para que ele aprenda a não mais abrir livros estranhos que
+encontrar por aí.</p>
+<h4 id="maldição">Maldição:</h4>
+<ul>
+<li><p>Se
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>≥</mo><mn>101</mn></mrow><annotation encoding="application/x-tex">N \geq 101</annotation></semantics></math>,
+então
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mn>91</mn><mrow><mo stretchy="true" form="prefix">(</mo><mi>N</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>N</mi><mo>−</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">f91 (N) = N - 10</annotation></semantics></math>.</p></li>
+<li><p>Se
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>≤</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">N \leq 100</annotation></semantics></math>,
+então
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mn>91</mn><mrow><mo stretchy="true" form="prefix">(</mo><mi>N</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>f</mi><mn>91</mn><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mn>91</mn><mrow><mo stretchy="true" form="prefix">(</mo><mi>N</mi><mo>+</mo><mn>11</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f91 (N) = f91 (f91 (N + 11))</annotation></semantics></math>.</p></li>
+</ul>
+<h2 id="entrada">Entrada</h2>
+<p>O arquivo de entrada consiste de, no máximo, 250.000 casos de teste.
+Cada caso de teste consiste em um único número N, onde
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>N</mi><mo>≤</mo><mn>1.000</mn><mn>.000</mn></mrow><annotation encoding="application/x-tex">0 \leq N \leq 1.000.000</annotation></semantics></math>).
+O fim da entrada é alcançado quando o número 0 é encontrado. O número 0
+não deve ser considerado como parte do conjunto de teste.</p>
+<h2 id="saída">Saída</h2>
+<p>O programa deve imprimir cada resultado em uma linha. Para um dado
+número
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+e seu respectivo resultado
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>,
+a saída deverá seguir o seguinte formato:</p>
+<pre><code>f91(N) = M</code></pre>
+<h2 id="exemplo">Exemplo</h2>
+<h3 id="entrada-1">Entrada</h3>
+<pre><code>500
+91
+0</code></pre>
+<h3 id="saida">Saida</h3>
+<pre><code>f91(500) = 490
+f91(91) = 91</code></pre>
+<div id="footer">
+<p>Author: David Déharbe Adaptado por: Gabriel Tiveron e Murilo
+Loiola</p>
+</div>
+
+
+</body></html>

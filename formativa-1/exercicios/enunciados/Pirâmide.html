@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://moj.naquadah.com.br/contests/jl_eda1_f1_2025_1/piramide.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="author" content="OBI2022 – Prog. Nível Sênior – Fase 2">
+  <title>Pirâmide</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="./Pirâmide_files/pandoc.css">
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Pirâmide</h1>
+<p class="author">OBI2022 – Prog. Nível Sênior – Fase 2</p>
+</header>
+<h1 id="preâmbulo">Preâmbulo</h1>
+<p>O rei da Nlogônia decidiu construir uma pirâmide no jardim do Palácio
+Real, usando cubos de pedra de mesmo tamanho. A dimensão de uma pirâmide
+é o número de cubos de pedra num dos lados da base (primeira camada) da
+pirâmide. A base da pirâmide é quadrada, ou seja, cada lado tem o mesmo
+número de cubos de pedra. Na pirâmide, a partir da segunda camada, cada
+cubo de pedra deve ser empilhado exatamente em cima de outro cubo de
+pedra que não esteja na borda da camada abaixo. Além disso, o número de
+camadas deve ser o maior possível para uma dada dimensão, e em cada
+camada deve ser usado o maior número de cubos de pedra possível. A
+figura abaixo à esquerda mostra uma pirâmide de dimensão 3; a figura à
+direita mostra o plano de contrução para essa pirâmide, indicando
+quantos cubos de pedra devem ser empilhados em cada posição.</p>
+<p>O rei ainda não decidiu qual a dimensão da pirâmide que vai
+construir, mas como é muito detalhista já avisou os Arquitetos Reais que
+antes de iniciar a contrução eles devem produzir um plano de contrução
+para a dimensão escolhida. Ajude os Arquitetos Reais, escrevendo um
+programa que, dada a dimensão da pirâmide, produza o seu plano de
+construção.</p>
+<h1 id="entrada">Entrada</h1>
+<p>A primeira e única linha da entrada contém um número inteiro
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>,
+a dimensão da pirâmide.</p>
+<h1 id="saída">Saída</h1>
+<p>Seu programa deve produzir o plano de contrução da pirâmide,
+constituído por
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+linhas, cada linha contendo
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+números inteiros.</p>
+<h1 id="restrições">Restrições</h1>
+<ul>
+<li>1 ≤ N  ≤ 100</li>
+</ul>
+<h1 id="informações-sobre-a-pontuação">Informações sobre a
+pontuação</h1>
+<ul>
+<li>Para um conjunto de casos de teste valendo 10 pontos, 1 ≤ N
+ ≤ 3</li>
+</ul>
+<h2 id="exemplo-de-entrada">Exemplo de entrada</h2>
+<pre><code>4
+</code></pre>
+<h3 id="saída-para-o-exemplo-acima">Saída para o exemplo acima</h3>
+<pre><code>1 1 1 1
+1 2 2 1
+1 2 2 1
+1 1 1 1
+</code></pre>
+<h3 id="explicação-para-o-exemplo-acima">Explicação para o exemplo
+acima</h3>
+<p>Para uma pirâmide de dimensão 3, o maior número de camadas possível é
+2.</p>
+<h2 id="exemplo-de-entrada-1">Exemplo de entrada</h2>
+<pre><code>8
+</code></pre>
+<h3 id="saída-para-o-exemplo-acima-1">Saída para o exemplo acima</h3>
+<pre><code>1 1 1 1 1 1 1 1
+1 2 2 2 2 2 2 1
+1 2 3 3 3 3 2 1
+1 2 3 4 4 3 2 1
+1 2 3 4 4 3 2 1
+1 2 3 3 3 3 2 1
+1 2 2 2 2 2 2 1
+1 1 1 1 1 1 1 1
+</code></pre>
+<h3 id="explicação-para-o-exemplo-acima-1">Explicação para o exemplo
+acima</h3>
+<p>Para uma pirâmide de dimensão 8, o maior número de camadas possível é
+4.</p>
+<div class="center">
+<p>Author: OBI2022 – Prog. Nível Sênior – Fase 2</p>
+</div>
+
+
+</body></html>

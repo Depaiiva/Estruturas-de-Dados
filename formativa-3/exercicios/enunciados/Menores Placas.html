@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://moj.naquadah.com.br/contests/jl_eda1_f3_2025_1/menores-placas.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="author" content="Bruno Ribas">
+  <title>Menores Placas</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+</style>
+  <style type="text/css">body {
+margin: auto;
+padding-right: 1em;
+padding-left: 1em;
+max-width: 44em; border-left: 1px solid black;
+border-right: 1px solid black;
+color: black;
+font-family: Verdana, sans-serif;
+font-size: 100%;
+line-height: 140%;
+color: #333; }
+pre {
+border: 1px dotted gray;
+background-color: #ececec;
+color: #1111111;
+padding: 0.5em;
+}
+blockquote {
+color: #666666;
+margin: 0;
+padding-left: 3em;
+border-left: 0.5em #EEE solid;
+}
+code {
+font-family: monospace;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a { text-decoration: none;
+color: #7a5ada; }
+h1, h2, h3, h4, h5 { font-family: verdana;
+font-weight: bold;
+border-bottom: 1px dotted black;
+color: #7a5ada; }
+h1 {
+font-size: 130%;
+}
+h2 {
+font-size: 110%;
+}
+h3 {
+font-size: 95%;
+}
+h4 {
+font-size: 90%;
+font-style: italic;
+}
+h5 {
+font-size: 90%;
+font-style: italic;
+}
+h1.title {
+font-size: 200%;
+font-weight: bold;
+padding-top: 0.2em;
+padding-bottom: 0.2em;
+text-align: left;
+border: none;
+}
+dt code {
+font-weight: bold;
+}
+dd p {
+margin-top: 0;
+}
+#footer {
+padding-top: 1em;
+font-size: 70%;
+color: gray;
+text-align: center;
+}
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Menores Placas</h1>
+<p class="author">Bruno Ribas</p>
+</header>
+<h1 id="preâmbulo">Preâmbulo</h1>
+<p>Joãozinho adora ler os números das placas dos carros, e a cada placa
+que lê grita no carro, assustando a todos, o número que leu.</p>
+<p>Claro, Joãozinho faz isso durante as viagens em família. Ultimamente
+a família pega o carro e dirige sem rumo por horas a fio, pois não podem
+passear em shoppings, e a diversão foi colocar todo mundo no carro e
+viajar pelas estradas do país.</p>
+<p>Leônidas, o pai de Joãozinho, resolveu desafiar seu filho. Toda vez
+que ele ler uma placa deveria anotar, e não gritar, e de vez em quando o
+pai iria perguntar quais eram as N menores placas lidas até o
+momento.</p>
+<p>Essa brincadeira ficou tão popular na família que todos começaram a
+prestar atenção nas placas e começaram a "trucar" as repostas de
+Joãozinho.</p>
+<p>Para garantir que Joãozinho não esteja trapaceando, Leônidas pediu a
+você que implementasse um programa de computador que responda os valores
+corretamente. As placas serão inseridas por Gertrudes, mãe de
+Joãozinho.</p>
+<h1 id="entrada">Entrada</h1>
+<p>A entrada é composta por um único caso de testes com diversas
+linhas.</p>
+<p>Cada linha é composta por dois números, o primeiro número,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>O</mi><annotation encoding="application/x-tex">O</annotation></semantics></math>,
+representa a operação sendo feita.</p>
+<p>Quando
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>O</mi><annotation encoding="application/x-tex">O</annotation></semantics></math>
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>
+significa que após será enviado um número inteiro
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mi>i</mi></msub><annotation encoding="application/x-tex">P_i</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><msub><mi>P</mi><mi>i</mi></msub><mo>≤</mo><msup><mn>10</mn><mn>7</mn></msup></mrow><annotation encoding="application/x-tex">0 \leq P_i \leq 10^7</annotation></semantics></math>)
+representando uma nova placa identificada pela família.</p>
+<p>Quando
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>O</mi><annotation encoding="application/x-tex">O</annotation></semantics></math>
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math>,
+o número seguinte que acompanha
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mi>i</mi></msub><annotation encoding="application/x-tex">T_i</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>≤</mo><msub><mi>T</mi><mi>i</mi></msub><mo>≤</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">1 \leq T_i \leq 100</annotation></semantics></math>)
+representando a pergunta que deve ser respondida: Liste as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mi>i</mi></msub><annotation encoding="application/x-tex">T_i</annotation></semantics></math>
+menores placas lidas até o momento.</p>
+<p>A entrada termina em <code>EOF</code>.</p>
+<h2 id="limites">Limites</h2>
+<ul>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>
+(quantidade de placas) - indeterminado!</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mi>i</mi></msub><annotation encoding="application/x-tex">P_i</annotation></semantics></math>
+(numeral de cada placa) -
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><msub><mi>P</mi><mi>i</mi></msub><mo>≤</mo><msup><mn>10</mn><mn>7</mn></msup></mrow><annotation encoding="application/x-tex">0 \leq P_i \leq 10^7</annotation></semantics></math>
+<ul>
+<li>não existem placas repetidas</li>
+</ul></li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mi>i</mi></msub><annotation encoding="application/x-tex">T_i</annotation></semantics></math>
+(quantidade de placas a imprimir)
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>≤</mo><msub><mi>T</mi><mi>i</mi></msub><mo>≤</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">1 \leq T_i \leq 100</annotation></semantics></math>
+<ul>
+<li>nunca será pedido para imprimir mais que 100 placas.</li>
+</ul></li>
+</ul>
+<h1 id="saída">Saída</h1>
+<p>A saída é composta por diversas linhas. Sempre que
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>O</mi><annotation encoding="application/x-tex">O</annotation></semantics></math>
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math>
+você deve imprimir uma única linha contendo as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mi>i</mi></msub><annotation encoding="application/x-tex">T_i</annotation></semantics></math>
+menores placas identificadas pela família até o momento.</p>
+<h1 id="exemplos">Exemplos</h1>
+<h2 id="exemplo-de-entrada">Exemplo de entrada</h2>
+<pre><code>1 1365271
+1 9164517
+1 5782846
+2 2
+1 1153896
+1 3641547
+2 2
+</code></pre>
+<h3 id="saída-para-o-exemplo-acima">Saída para o exemplo acima</h3>
+<pre><code>1365271 5782846
+1153896 1365271
+</code></pre>
+<h2 id="exemplo-de-entrada-1">Exemplo de entrada</h2>
+<pre><code>1 9019747
+1 3629786
+1 7091927
+2 1
+1 2013733
+1 4784225
+1 7865835
+1 7145336
+1 3536931
+1 9584045
+1 1967593
+2 7
+</code></pre>
+<h3 id="saída-para-o-exemplo-acima-1">Saída para o exemplo acima</h3>
+<pre><code>3629786
+1967593 2013733 3536931 3629786 4784225 7091927 7145336
+</code></pre>
+<h2 id="exemplo-de-entrada-2">Exemplo de entrada</h2>
+<pre><code>1 5
+2 1
+1 4
+2 2
+</code></pre>
+<h3 id="saída-para-o-exemplo-acima-2">Saída para o exemplo acima</h3>
+<pre><code>5
+4 5
+</code></pre>
+<div class="center">
+<p>Author: Bruno Ribas</p>
+</div>
+
+
+</body></html>
