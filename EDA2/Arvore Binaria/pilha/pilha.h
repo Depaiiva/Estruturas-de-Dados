@@ -11,5 +11,6 @@ int empilha(celula *cabeca, int *x);
 int desempilha(celula *cabeca, int *y);
 void destroi_pilha(celula *cabeca);
 void imprimir_pilha(celula *cabeca);
+void imprimir_formato_pilha(celula *cabeca);
 
 #endif

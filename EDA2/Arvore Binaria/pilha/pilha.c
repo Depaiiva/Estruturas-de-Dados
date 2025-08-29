@@ -3,10 +3,9 @@
 #include "pilha.h"
 
 celula *cria_pilha(){
-    celula *pilha = malloc(sizeof(celula));
-    pilha->prox = NULL;
-    pilha->dado = 0;
-    return pilha;
+    celula *cabeca = malloc(sizeof(celula));
+    cabeca->prox = NULL;
+    return cabeca;
 }
 
 int empilha(celula *cabeca, int *x){
@@ -41,6 +40,16 @@ void imprimir_pilha(celula *cabeca){
     celula *temp = cabeca->prox;
     while(temp != NULL){
         printf("[%d]->", temp->dado);
+        temp = temp->prox;
     }
-    printf("\n");
+    printf("NULL\n");
+}
+
+void imprimir_formato_pilha(celula *cabeca){
+    celula *temp = cabeca->prox;
+    while(temp != NULL){
+        printf("|[%d]|\n", temp->dado);
+        temp = temp->prox;
+    }
+    printf("[NULL]\n");
 }
