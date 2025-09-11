@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "pilha/pilha.h"
+#include "pilha.h"
 
 int main(void){
     celula *p = cria_pilha();
