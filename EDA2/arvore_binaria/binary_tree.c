@@ -35,30 +35,17 @@ void pre_ordem(no *raiz){
 }
 
 void em_ordem(no *raiz){
-    if(raiz->left == NULL){
-        printf("%d, ", raiz->dado);
-    } else {
+    if(raiz != NULL){
         em_ordem(raiz->left);
         printf("%d, ", raiz->dado);
-        if(raiz->right != NULL){
-            em_ordem(raiz->right);
-        }
+        em_ordem(raiz->right);
     }
 }
 
 void pos_ordem(no *raiz){
-    if(raiz->left == NULL && raiz->right == NULL){
-        printf("%d, ", raiz->dado);
-        return;
-    }
-
-    if(raiz->left != NULL){
+    if (raiz != NULL) {
         pos_ordem(raiz->left);
-    }
-
-    if(raiz->left != NULL){
         pos_ordem(raiz->right);
+        printf("%d, ", raiz->dado);
     }
-
-    printf("%d, ", raiz->dado);
 }
