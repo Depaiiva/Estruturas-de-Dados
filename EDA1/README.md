@@ -1,6 +1,6 @@
 #  Estruturas de Dados 1
 
-Este repositório reúne meus estudos sobre **Estruturas de Dados**, abordando os principais conceitos e fundamentos da disciplina.  
+Este repositório reúne meus estudos sobre **Estruturas de Dados 1** do curso de engenharia de software na **Universidade de Brasília (UNB)**, abordando os principais conceitos e fundamentos da disciplina.  
 O foco aqui está na **primeira parte da matéria**, utilizando a linguagem **C** para implementação prática dos conteúdos.
 
 ---
@@ -8,7 +8,8 @@ O foco aqui está na **primeira parte da matéria**, utilizando a linguagem **C*
 ##  Conteúdo Estudado
 
 - ✅ **Estrutura básica em C** (sintaxe, funções, modularização)  
-- ✅ **Ponteiros** (conceitos fundamentais e aplicações)  
+- ✅ **Ponteiros** (conceitos fundamentais e aplicações)
+- ✅ **Complexidade de algoritmos** (notação Big O)
 - ✅ **Alocação dinâmica de memória** (`malloc`, `calloc`, `free`)  
 - ✅ **Recursão** (chamadas recursivas e análise de complexidade)  
 - ✅ **Métodos de ordenação** (implementação e análise de desempenho)  
