@@ -10,7 +10,7 @@ O foco aqui está na **primeira parte da matéria**, utilizando a linguagem **C*
 - ✅ **Estrutura básica em C** (sintaxe, funções, modularização)  
 - ✅ **Ponteiros** (conceitos fundamentais e aplicações)
 - ✅ **Complexidade de algoritmos** (notação Big O)
-- ✅ **Alocação dinâmica de memória** (`malloc`, `calloc`, `free`)  
+- ✅ **Alocação dinâmica de memória** (`malloc`, `realloc`, `calloc`, `free`)  
 - ✅ **Recursão** (chamadas recursivas e análise de complexidade)  
 - ✅ **Métodos de ordenação** (implementação e análise de desempenho)  
 - ✅ **Estruturas lineares**  
