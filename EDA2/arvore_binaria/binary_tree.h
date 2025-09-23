@@ -16,4 +16,9 @@ void pre_ordem(no *raiz);
 void em_ordem(no *raiz);
 void pos_ordem(no *raiz);
 
+no *max(no *raiz);
+no *min(no *raiz);
+
+void suc(no *raiz, int valor);
+
 #endif
