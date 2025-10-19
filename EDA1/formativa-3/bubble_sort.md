@@ -4,7 +4,7 @@ O Bubble Sort é o algoritmo de ordenação mais simples, onde elementos são co
 
 ---
 
-## 🧠 Ideia Principal
+##  Ideia Principal
 
 1. Percorrer o vetor várias vezes.
 2. Comparar pares de elementos adjacentes.
@@ -12,7 +12,7 @@ O Bubble Sort é o algoritmo de ordenação mais simples, onde elementos são co
 
 ---
 
-## ⏱️ Complexidade
+##  Complexidade
 
 | Caso        | Complexidade |
 |-------------|--------------|
@@ -22,7 +22,7 @@ O Bubble Sort é o algoritmo de ordenação mais simples, onde elementos são co
 
 ---
 
-## 📊 Estabilidade e Memória
+##  Estabilidade e Memória
 
 | Propriedade       | Detalhe |
 |-------------------|---------|
