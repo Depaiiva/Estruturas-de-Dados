@@ -4,7 +4,7 @@ A ordenação por seleção é um algoritmo simples de ordenação que divide o 
 
 ---
 
-## 🧠 Ideia Principal
+##  Ideia Principal
 
 1. Percorra o vetor e encontre o menor elemento.
 2. Troque o menor elemento com o primeiro elemento do vetor.
@@ -13,7 +13,7 @@ A ordenação por seleção é um algoritmo simples de ordenação que divide o 
 
 ---
 
-## 📌 Exemplo
+##  Exemplo
 
 Vetor inicial: **[5, 3, 4, 1, 2]**
 
@@ -26,7 +26,7 @@ Vetor inicial: **[5, 3, 4, 1, 2]**
 
 ---
 
-## 💻 Implementação em C
+##  Implementação em C
 
 ```c
 #include <stdio.h>
@@ -71,7 +71,7 @@ int main() {
 
 ---
 
-## ⏱️ Complexidade do Algoritmo
+##  Complexidade do Algoritmo
 
 | Caso        | Complexidade |
 |-------------|--------------|
@@ -81,16 +81,14 @@ int main() {
 
 ---
 
-## ✅ Vantagens
+##  Vantagens
 ✔ Fácil de entender e implementar  
 ✔ Não precisa de memória extra  
 ✔ Pouco número de trocas
 
-## ❌ Desvantagens
+##  Desvantagens
 ❌ Ineficiente para grandes conjuntos de dados  
 ❌ Sempre realiza O(n²) comparações, independentemente da entrada  
 ❌ Instável (pode mudar a ordem de elementos iguais)
 
 ---
-
-Se quiser, posso continuar com Bubble Sort, Merge Sort, Quick Sort ou até gerar um PDF com todos os algoritmos! 😄
