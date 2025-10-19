@@ -4,7 +4,7 @@ O Quick Select é um algoritmo para encontrar o **k-ésimo menor elemento** de u
 
 ---
 
-## 🧠 Ideia Principal
+##  Ideia Principal
 
 1. Escolher um pivô.
 2. Particionar o vetor ao redor do pivô.
@@ -13,7 +13,7 @@ O Quick Select é um algoritmo para encontrar o **k-ésimo menor elemento** de u
 
 ---
 
-## ⏱️ Complexidade
+##  Complexidade
 
 | Caso        | Complexidade |
 |-------------|--------------|
@@ -23,7 +23,7 @@ O Quick Select é um algoritmo para encontrar o **k-ésimo menor elemento** de u
 
 ---
 
-## 📊 Estabilidade e Memória
+##  Estabilidade e Memória
 
 | Propriedade       | Detalhe |
 |-------------------|---------|
