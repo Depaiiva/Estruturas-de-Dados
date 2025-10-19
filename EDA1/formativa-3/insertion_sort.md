@@ -4,7 +4,7 @@ A ordenação por inserção é um dos algoritmos mais simples e intuitivos para
 
 ---
 
-## 🧠 Ideia Principal
+## Ideia Principal
 
 1. Dividimos o vetor em duas partes:
    - Parte ordenada (inicialmente só o primeiro elemento).
@@ -17,7 +17,7 @@ A ordenação por inserção é um dos algoritmos mais simples e intuitivos para
 
 ---
 
-## 📌 Exemplo
+##  Exemplo
 
 Vetor inicial: **[5, 3, 4, 1, 2]**
 
@@ -30,7 +30,7 @@ Vetor inicial: **[5, 3, 4, 1, 2]**
 
 ---
 
-## 💻 Implementação em C
+##  Implementação em C
 
 ```c
 #include <stdio.h>
@@ -73,7 +73,7 @@ int main() {
 
 ---
 
-## ⏱️ Complexidade do Algoritmo
+##  Complexidade do Algoritmo
 
 | Caso        | Complexidade |
 |-------------|--------------|
@@ -83,15 +83,13 @@ int main() {
 
 ---
 
-## ✅ Vantagens
+##  Vantagens
 ✔ Simples de entender e implementar  
 ✔ Bom para vetores pequenos  
 ✔ Estável (não troca a ordem de elementos iguais)
 
-## ❌ Desvantagens
+##  Desvantagens
 ❌ Ineficiente para vetores grandes  
 ❌ Complexidade quadrática no pior caso
 
 ---
-
-Se quiser, posso continuar com outros algoritmos como Selection Sort, Bubble Sort ou Merge Sort! 😉
