@@ -4,7 +4,7 @@ O Merge Sort é um algoritmo baseado na técnica **Dividir para Conquistar (Divi
 
 ---
 
-## 🧠 Ideia Principal
+##  Ideia Principal
 
 1. Dividir o vetor ao meio recursivamente até que cada parte tenha apenas um elemento.
 2. Mesclar (merge) as duas metades de forma ordenada.
@@ -12,7 +12,7 @@ O Merge Sort é um algoritmo baseado na técnica **Dividir para Conquistar (Divi
 
 ---
 
-## 💻 Código em C
+##  Código em C
 
 ```c
 #include <stdio.h>
@@ -62,7 +62,7 @@ int main() {
 
 ---
 
-## ⏱️ Complexidade
+##  Complexidade
 
 | Caso        | Complexidade |
 |-------------|--------------|
@@ -72,7 +72,7 @@ int main() {
 
 ---
 
-## 📊 Estabilidade e Memória
+##  Estabilidade e Memória
 
 | Propriedade       | Detalhe |
 |-------------------|---------|
