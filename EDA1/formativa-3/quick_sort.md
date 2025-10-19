@@ -4,7 +4,7 @@ O Quick Sort é um algoritmo eficiente de ordenação baseado em **Dividir para 
 
 ---
 
-## 🧠 Ideia Principal
+##  Ideia Principal
 
 1. Escolher um pivô.
 2. Colocar todos os menores à esquerda e os maiores à direita (particionamento).
@@ -12,7 +12,7 @@ O Quick Sort é um algoritmo eficiente de ordenação baseado em **Dividir para 
 
 ---
 
-## 💻 Código em C
+##  Código em C
 
 ```c
 #include <stdio.h>
@@ -58,7 +58,7 @@ int main() {
 
 ---
 
-## ⏱️ Complexidade
+##  Complexidade
 
 | Caso        | Complexidade |
 |-------------|--------------|
@@ -68,7 +68,7 @@ int main() {
 
 ---
 
-## 📊 Estabilidade e Memória
+##  Estabilidade e Memória
 
 | Propriedade       | Detalhe |
 |-------------------|---------|
